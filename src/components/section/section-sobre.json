@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_section_section_sobres",
+  "info": {
+    "displayName": "section_sobre",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "maxLength": 200
+    },
+    "descricao": {
+      "type": "text",
+      "required": true
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section-premisa",
+      "required": true
+    }
+  }
+}

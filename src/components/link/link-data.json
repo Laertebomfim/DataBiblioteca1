@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_link_link_data",
+  "info": {
+    "displayName": "link_data",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "link_text": {
+      "type": "string",
+      "required": true
+    },
+    "link_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

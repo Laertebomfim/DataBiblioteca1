@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_link_logo_menos",
+  "info": {
+    "displayName": "logo_meno",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link_url": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

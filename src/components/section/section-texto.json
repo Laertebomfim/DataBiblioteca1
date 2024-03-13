@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_section_textos",
+  "info": {
+    "displayName": "section_texto",
+    "icon": "pencil",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "decription": {
+      "type": "blocks",
+      "required": true
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section-premisa"
+    }
+  }
+}

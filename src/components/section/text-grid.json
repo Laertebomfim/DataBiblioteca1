@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_section_text_grids",
+  "info": {
+    "displayName": "text_grid",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "descricao": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
