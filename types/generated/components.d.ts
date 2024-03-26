@@ -78,7 +78,7 @@ export interface SectionSectionPremisa extends Schema.Component {
   attributes: {
     id_title: Attribute.String &
       Attribute.SetMinMaxLength<{
-        minLength: 4;
+        minLength: 5;
         maxLength: 50;
       }>;
     backgroud: Attribute.Boolean &
@@ -118,7 +118,6 @@ export interface SectionSectionTexto extends Schema.Component {
     title: Attribute.String & Attribute.Required;
     decription: Attribute.Blocks & Attribute.Required;
     metadata: Attribute.Component<'section.section-premisa'>;
-    Table: Attribute.Component<'table.table'>;
   };
 }
 
@@ -134,97 +133,6 @@ export interface SectionTextGrid extends Schema.Component {
   };
 }
 
-export interface TableDataColm extends Schema.Component {
-  collectionName: 'components_atomo_data_colms';
-  info: {
-    displayName: 'data_colum';
-    icon: 'database';
-    description: '';
-  };
-  attributes: {
-    colum_1: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 30;
-      }>;
-    colum_2: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 30;
-      }>;
-    colum_3: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 30;
-      }>;
-    colum_4: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 30;
-      }>;
-    colum_5: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 30;
-      }>;
-  };
-}
-
-export interface TableLineTible extends Schema.Component {
-  collectionName: 'components_atomo_line_tibles';
-  info: {
-    displayName: 'line_title';
-    icon: 'bulletList';
-    description: '';
-  };
-  attributes: {
-    colum_1: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 20;
-      }>;
-    colum_2: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 20;
-      }>;
-    colum_3: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 20;
-      }>;
-    colum_4: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 20;
-      }>;
-    colum_5: Attribute.String &
-      Attribute.Required &
-      Attribute.SetMinMaxLength<{
-        maxLength: 20;
-      }>;
-  };
-}
-
-export interface TableTable extends Schema.Component {
-  collectionName: 'components_table_tables';
-  info: {
-    displayName: 'Table';
-    icon: 'bulletList';
-  };
-  attributes: {
-    title_tible: Attribute.Component<'table.line-tible', true> &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-          max: 1;
-        },
-        number
-      >;
-    data_colum_table: Attribute.Component<'table.data-colm', true>;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -237,9 +145,6 @@ declare module '@strapi/types' {
       'section.section-sobre': SectionSectionSobre;
       'section.section-texto': SectionSectionTexto;
       'section.text-grid': SectionTextGrid;
-      'table.data-colm': TableDataColm;
-      'table.line-tible': TableLineTible;
-      'table.table': TableTable;
     }
   }
 }
