@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_atomo_data_colms",
+  "info": {
+    "displayName": "data_colum",
+    "icon": "database",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "colum_1": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "colum_2": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "colum_3": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "colum_4": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "colum_5": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    }
+  }
+}

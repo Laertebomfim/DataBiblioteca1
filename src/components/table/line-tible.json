@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_atomo_line_tibles",
+  "info": {
+    "displayName": "line_title",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "colum_1": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "colum_2": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    },
+    "colum_3": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    },
+    "colum_4": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "colum_5": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    }
+  }
+}

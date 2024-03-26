@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_table_tables",
+  "info": {
+    "displayName": "Table",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title_tible": {
+      "type": "component",
+      "repeatable": true,
+      "component": "table.line-tible",
+      "max": 1,
+      "min": 1
+    },
+    "data_colum_table": {
+      "type": "component",
+      "repeatable": true,
+      "component": "table.data-colm"
+    }
+  }
+}
